@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+import salt.loader
+
+def funkcja():
+    wynik = salt.loader.raw_mod(__opts__,'test',None)
+    ahaha = testmod['test.ping']()
+    return ahaha 
