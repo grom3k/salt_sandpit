@@ -1,6 +1,3 @@
-include:
-  - base: paczka 
-
 git:
   pkg.installed
 
@@ -20,3 +17,8 @@ initialize_bare_repo:
     - unless: git rev-parse --is-bare-repository
     - require:
       - file: /home/git
+
+/tmp/xxxxdupa:
+  file:
+    - managed
+    - contents: {{ salt['environ.get']('HOSTNAME') }}

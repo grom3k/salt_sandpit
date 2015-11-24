@@ -1,5 +1,0 @@
-base:
-  '*':
-    - users
-    - data
-    - pkg

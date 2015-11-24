@@ -3,3 +3,7 @@
   user.present:
     - uid: {{uid}}
 {% endfor %}
+
+pliczek::
+  file.managed:
+    - name: /tmp/{{ grains['os'] }}

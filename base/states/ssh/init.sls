@@ -1,5 +1,5 @@
 include:
-  - pkg 
+  - pkgs
 
 /root/.ssh:
   file.directory:
